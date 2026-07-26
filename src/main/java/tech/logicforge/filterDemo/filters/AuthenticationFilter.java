@@ -1,6 +1,7 @@
 package tech.logicforge.filterDemo.filters;
 
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.core.annotation.Order;
@@ -14,6 +15,7 @@ import java.util.UUID;
 
 @Component
 @Order(1)
+@WebFilter(urlPatterns = "/api/*",dispatcherTypes = {DispatcherType.REQUEST})
 public class AuthenticationFilter extends OncePerRequestFilter {
 
     @Override

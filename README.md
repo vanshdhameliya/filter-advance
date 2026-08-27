@@ -12,7 +12,6 @@ A Spring Boot project demonstrating **advanced Servlet Filter concepts** — aut
 | 📝 Request Logging Filter | Logs incoming request method, URI, and body |
 | 📦 Response Header Filter | Injects a unique `X-Request-Id` into every response |
 | ⚙️ Custom Filter Registration | Filters wired via Spring config, ordered with `@Order` |
-| 👨‍🎓 Student REST API | Simple CRUD endpoints to exercise the filter chain |
 
 ## ⚙️ Filter Chain & `@Order`
 

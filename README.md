@@ -14,8 +14,6 @@ A Spring Boot project demonstrating **advanced Servlet Filter concepts** — aut
 | ⚙️ Custom Filter Registration | Filters wired via Spring config, ordered with `@Order` |
 | 👨‍🎓 Student REST API | Simple CRUD endpoints to exercise the filter chain |
 
----
-
 ## ⚙️ Filter Chain & `@Order`
 
 Spring executes registered filters in ascending order of the value passed to `@Order` — **lower number runs first**. Each filter wraps the next one, so pre-processing logic runs top-down in order, while post-processing logic runs in reverse.
